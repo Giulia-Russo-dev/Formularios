@@ -16,4 +16,21 @@
     --color-green-800: #274846;
     --color-green-900: #243d3b;
     --color-green-950: #112222;
+
+    --spacing-my-50: 50px;
+
+    --animate-corTexto: mudaCor 20s infinite;
+
+    @keyframes mudaCor {
+        0%   {color: rgb(255, 0, 0)}
+        25%  {color: rgb(0, 255, 0)}
+        50$  {color: rgb(0, 0, 255)}
+        75%  {color: rgb(255, 0, 255)}
+        100% {color: rgb(255, 255, 0)}
+    }
+
+}
+
+.astro-1esb{
+    @apply size-10 rounded-full border-2 border-cyan-950 object-cover cursor-pointer hover:animate-spin duration-500
 }
